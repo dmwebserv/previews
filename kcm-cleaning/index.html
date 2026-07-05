@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KCM Window Cleaning | Window Cleaner in Frinton, Walton &amp; Clacton</title>
+<meta name="description" content="Crystal-clear windows with pure water pole cleaning. Windows, gutters, fascias and conservatories across Frinton-on-Sea, Walton and Clacton. Call 07533 407765 for a free quote.">
+<style>
+  :root{
+    --teal:#0f6c74; --teal-deep:#0a4a50; --teal-bright:#14a0ab; --aqua:#e5f6f7;
+    --foam:#f4fbfc; --ink:#12262a; --mut:#547077; --line:#d4e8ea; --sun:#ffc94d; --white:#fff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+  a{color:var(--teal)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  section{padding:56px 0}
+  h2{font-size:clamp(1.5rem,3.5vw,2.1rem);line-height:1.2;color:var(--teal-deep);margin-bottom:10px}
+  .kicker{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-bright);margin-bottom:8px}
+  .sub{color:var(--mut);max-width:56ch}
+
+  /* preview banner */
+  .preview{position:sticky;top:0;z-index:60;background:var(--sun);color:#3d2c00;font-size:.85rem;padding:9px 14px;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center}
+  .preview b{font-weight:700}
+  .preview a{background:#3d2c00;color:#ffe4a1;text-decoration:none;font-weight:700;padding:5px 12px;border-radius:999px;font-size:.8rem;white-space:nowrap}
+  .preview button{background:none;border:none;font-size:1rem;cursor:pointer;color:#3d2c00;opacity:.7}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:var(--teal-deep);color:#fff;box-shadow:0 2px 10px rgba(10,74,80,.3)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
+  .brand .logo{width:38px;height:38px;flex:0 0 auto}
+  .brand .nm{font-weight:800;font-size:1.02rem;line-height:1.15}
+  .brand .tg{display:block;font-weight:400;font-size:.72rem;color:#9fd4d8}
+  .call{background:var(--sun);color:#3d2c00;text-decoration:none;font-weight:800;padding:10px 16px;border-radius:8px;font-size:.9rem;white-space:nowrap;display:inline-flex;align-items:center;gap:7px}
+
+  /* hero */
+  .hero{background:linear-gradient(160deg,var(--teal-deep) 0%,var(--teal) 55%,var(--teal-bright) 135%);color:#fff;padding:64px 0 70px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;bottom:-40px;right:-60px;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.06)}
+  .hero h1{font-size:clamp(1.8rem,5vw,2.9rem);line-height:1.15;font-weight:800;max-width:22ch;position:relative;z-index:1}
+  .hero p{margin:16px 0 26px;color:#cdeef0;max-width:52ch;font-size:1.05rem;position:relative;z-index:1}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:1}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:9px;font-size:.98rem}
+  .btn-a{background:var(--sun);color:#3d2c00}
+  .btn-g{background:rgba(255,255,255,.13);color:#fff;border:1px solid rgba(255,255,255,.35)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px;position:relative;z-index:1}
+  .chip{font-size:.78rem;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.24);padding:6px 12px;border-radius:999px;color:#e2f5f6}
+
+  /* trust strip */
+  .trust{background:var(--aqua);padding:22px 0;border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .titem{display:flex;gap:10px;align-items:center;font-size:.88rem;font-weight:600;color:var(--teal-deep)}
+  .titem svg{flex:0 0 auto}
+
+  /* services */
+  .grid{display:grid;gap:16px;margin-top:26px;grid-template-columns:1fr}
+  .card{border:1px solid var(--line);border-radius:12px;padding:22px;background:#fff}
+  .card h3{color:var(--teal-deep);font-size:1.05rem;margin:10px 0 6px}
+  .card p{font-size:.92rem;color:var(--mut)}
+  .ico{width:42px;height:42px;border-radius:9px;background:var(--aqua);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+
+  /* how pure water works */
+  .how{background:var(--foam);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .hsteps{display:grid;gap:14px;margin-top:26px;grid-template-columns:1fr}
+  .hstep{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+  .hstep .n{width:30px;height:30px;border-radius:50%;background:var(--teal);color:#fff;font-weight:800;font-size:.9rem;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+  .hstep b{color:var(--teal-deep);font-size:.95rem}
+  .hstep p{font-size:.87rem;color:var(--mut);margin-top:4px}
+
+  /* photos */
+  .shots{display:grid;gap:14px;grid-template-columns:1fr 1fr;margin-top:26px}
+  .shot{border-radius:12px;aspect-ratio:4/3;background:linear-gradient(150deg,#d3ecee,#eefafb);border:1.5px dashed #8ec9ce;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;color:#3f7b81;font-size:.82rem;font-weight:600}
+
+  /* reviews */
+  .rev{background:var(--teal-deep);color:#fff}
+  .rev h2{color:#fff}
+  .rev .sub{color:#9fd4d8}
+  .rgrid{display:grid;gap:16px;margin-top:26px;grid-template-columns:1fr}
+  .rcard{background:rgba(255,255,255,.07);border:1.5px dashed rgba(255,255,255,.3);border-radius:12px;padding:22px}
+  .stars{color:var(--sun);letter-spacing:2px;font-size:.95rem}
+  .rcard p{margin:10px 0 12px;font-size:.92rem;color:#cdeef0;font-style:italic}
+  .rcard span{font-size:.8rem;color:#9fd4d8;font-weight:600}
+
+  /* area */
+  .area ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .area li{background:var(--aqua);color:var(--teal-deep);font-weight:600;font-size:.85rem;padding:7px 14px;border-radius:999px}
+  .area .note{margin-top:14px;font-size:.9rem;color:var(--mut)}
+
+  /* contact */
+  .contact{background:var(--aqua)}
+  .cgrid{display:grid;gap:26px;grid-template-columns:1fr;margin-top:26px}
+  .cinfo .row{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}
+  .cinfo b{color:var(--teal-deep)}
+  form{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+  label{display:block;font-size:.82rem;font-weight:700;color:var(--teal-deep);margin:14px 0 5px}
+  input,textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:.95rem;background:#fbfeff}
+  textarea{min-height:100px;resize:vertical}
+  .send{margin-top:18px;width:100%;background:var(--teal);color:#fff;border:none;padding:14px;border-radius:9px;font-weight:800;font-size:1rem;cursor:pointer}
+
+  /* draft cta + footer */
+  .draft-cta{background:linear-gradient(150deg,#fff8e7,#ffefc4);border-top:1px solid #f0dca0}
+  .draft-cta .box{text-align:center;max-width:620px;margin:0 auto}
+  .draft-cta h2{color:#5d4200}
+  .draft-cta p{color:#7d5c10;margin:10px 0 22px}
+  footer{background:var(--teal-deep);color:#9fd4d8;font-size:.82rem;padding:26px 0;text-align:center}
+  footer a{color:#fff}
+
+  @media(min-width:720px){
+    .trust .wrap{grid-template-columns:repeat(4,1fr)}
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .hsteps{grid-template-columns:repeat(3,1fr)}
+    .rgrid{grid-template-columns:repeat(3,1fr)}
+    .cgrid{grid-template-columns:1fr 1.2fr}
+    .shots{grid-template-columns:repeat(3,1fr)}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview" id="pv">
+  <span>👋 <b>Free no-obligation preview built for KCM Window Cleaning</b> by DM Web Services.</span>
+  <a href="mailto:info@dmwebservices.co.uk?subject=Yes%20to%20my%20website%20—%20KCM%20Window%20Cleaning">Like it? Get it live from £349 →</a>
+  <button onclick="document.getElementById('pv').style.display='none'" aria-label="Dismiss">✕</button>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <svg class="logo" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="9" fill="#14a0ab"/><path d="M8 24c3-5 6-5 9 0s6 5 9 0" stroke="#fff" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M8 17c3-5 6-5 9 0s6 5 9 0" stroke="#cdeef0" stroke-width="2.6" stroke-linecap="round" fill="none" opacity=".7"/><circle cx="31" cy="10" r="3" fill="#ffc94d"/></svg>
+      <span class="nm">KCM Window Cleaning<span class="tg">Frinton · Walton · Clacton</span></span>
+    </a>
+    <a class="call" href="tel:07533407765">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+      07533 407765
+    </a>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <h1>Crystal-clear windows, streak-free every time.</h1>
+    <p>Pure water pole-system cleaning for homes and businesses across Frinton-on-Sea, Walton and Clacton — plus gutters, fascias and conservatories. Reliable rounds, spotless results.</p>
+    <div class="cta">
+      <a class="btn btn-a" href="tel:07533407765">📞 Call or text — 07533 407765</a>
+      <a class="btn btn-g" href="#quote">Get a free quote</a>
+    </div>
+    <div class="chips">
+      <span class="chip">💧 Pure water system</span>
+      <span class="chip">✓ Regular rounds or one-offs</span>
+      <span class="chip">✓ Free quotes</span>
+      <span class="chip">✓ Local &amp; reliable</span>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="titem"><svg width="20" height="20" viewBox="0 0 24 24" fill="#14a0ab"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>Based in Frinton-on-Sea</div>
+    <div class="titem"><svg width="20" height="20" viewBox="0 0 24 24" fill="#14a0ab"><path d="M12 6v6l4 2 .8-1.4-3.3-1.9V6H12zm0-4a10 10 0 100 20 10 10 0 000-20z"/></svg>Reliable, regular rounds</div>
+    <div class="titem"><svg width="20" height="20" viewBox="0 0 24 24" fill="#14a0ab"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8z"/></svg>Recommended locally</div>
+    <div class="titem"><svg width="20" height="20" viewBox="0 0 24 24" fill="#14a0ab"><path d="M12 2L4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z"/></svg>Homes &amp; commercial</div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <span class="kicker">What we do</span>
+    <h2>More than just windows.</h2>
+    <p class="sub">One visit can sort the lot — windows, frames, sills, gutters and more.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">💧</div><h3>Pure water window cleaning</h3><p>Water-fed pole system reaches upstairs windows safely from the ground — frames and sills cleaned every visit, spot-free finish.</p></div>
+      <div class="card"><div class="ico">🪟</div><h3>Traditional window cleaning</h3><p>Some jobs still call for the traditional method — done properly, with a tidy finish.</p></div>
+      <div class="card"><div class="ico">🍂</div><h3>Gutter cleaning</h3><p>Blocked gutters cause damp and damage. Cleared and flowing before winter does its worst.</p></div>
+      <div class="card"><div class="ico">🏠</div><h3>Fascias &amp; soffits</h3><p>Bring the white plastic back to white — lifts the look of the whole house.</p></div>
+      <div class="card"><div class="ico">☀️</div><h3>Conservatories</h3><p>Roofs, glass and frames — let the light back in.</p></div>
+      <div class="card"><div class="ico">🏢</div><h3>Commercial &amp; larger jobs</h3><p>Shops, offices and bigger properties — happy to travel further for larger jobs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <span class="kicker">The pure water difference</span>
+    <h2>Why pure water beats a bucket and sponge.</h2>
+    <div class="hsteps">
+      <div class="hstep"><div class="n">1</div><b>Purified on board</b><p>Tap water is filtered until nothing's left in it — no minerals, no residue.</p></div>
+      <div class="hstep"><div class="n">2</div><b>Scrubbed &amp; rinsed</b><p>The pole brush loosens dirt, then pure water rinses glass, frames and sills.</p></div>
+      <div class="hstep"><div class="n">3</div><b>Dries spot-free</b><p>Nothing in the water means nothing left behind — no streaks, no smears.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:40px">
+  <div class="wrap">
+    <span class="kicker">Recent work</span>
+    <h2>Results that speak for themselves.</h2>
+    <div class="shots">
+      <div class="shot">📷 Your photo here —<br>gleaming glass after a clean</div>
+      <div class="shot">📷 Your photo here —<br>gutter before &amp; after</div>
+      <div class="shot">📷 Your photo here —<br>the van / pole system at work</div>
+    </div>
+  </div>
+</section>
+
+<section class="rev">
+  <div class="wrap">
+    <span class="kicker" style="color:#ffc94d">Reviews</span>
+    <h2>What your customers say.</h2>
+    <p class="sub">These spaces are ready for your real Facebook recommendations — just send over your favourites and they'll go straight in.</p>
+    <div class="rgrid">
+      <div class="rcard"><div class="stars">★★★★★</div><p>Your review here — paste a favourite from your Facebook recommendations.</p><span>— Customer name, town</span></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>Your review here — the one that mentions reliability or "never miss a visit" works brilliantly.</p><span>— Customer name, town</span></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>Your review here — before/after gutter jobs always get great comments.</p><span>— Customer name, town</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap">
+    <span class="kicker">Coverage</span>
+    <h2>Areas covered.</h2>
+    <p class="sub">Regular rounds across the Tendring coast.</p>
+    <ul>
+      <li>Frinton-on-Sea</li><li>Walton-on-the-Naze</li><li>Kirby-le-Soken</li><li>Kirby Cross</li><li>Clacton-on-Sea</li><li>Holland-on-Sea</li><li>Great Holland</li>
+    </ul>
+    <p class="note">Bigger job a bit further out? No problem — happy to travel for larger work. Just ask.</p>
+  </div>
+</section>
+
+<section class="contact" id="quote">
+  <div class="wrap">
+    <span class="kicker">Get in touch</span>
+    <h2>Free quotes — no obligation.</h2>
+    <div class="cgrid">
+      <div class="cinfo">
+        <div class="row"><span>📞</span><div><b>Call or text</b><br><a href="tel:07533407765">07533 407765</a></div></div>
+        <div class="row"><span>💬</span><div><b>Facebook</b><br><a href="https://www.facebook.com/p/KCM-Window-Cleaning-100066339087117/">KCM Window Cleaning</a></div></div>
+        <div class="row"><span>📍</span><div><b>Based in</b><br>Frinton-on-Sea, Essex</div></div>
+        <div class="row"><span>🔁</span><div><b>Regular rounds</b><br>4-weekly or 8-weekly — or one-off cleans</div></div>
+      </div>
+      <form onsubmit="event.preventDefault();this.innerHTML='<p style=&quot;padding:30px 10px;text-align:center;font-weight:700;color:#0a4a50&quot;>✅ Thanks! This form will work for real once the site is live.</p>'">
+        <label for="n">Your name</label><input id="n" required placeholder="John Smith">
+        <label for="p">Phone number</label><input id="p" type="tel" required placeholder="07…">
+        <label for="m">What needs cleaning?</label><textarea id="m" placeholder="e.g. 3-bed semi in Kirby Cross, windows every 4 weeks…"></textarea>
+        <button class="send" type="submit">Request my free quote</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="draft-cta">
+  <div class="wrap box">
+    <h2>This is a free draft — built just for KCM Window Cleaning.</h2>
+    <p>Like what you see? It can be live on <b>kcmwindowcleaning.co.uk</b> with a branded email address within a week — from <b>£349 all-in</b>, then £15/month and everything's looked after for you. Don't like it? No problem, no hard feelings, nothing owed.</p>
+    <a class="btn btn-a" href="mailto:info@dmwebservices.co.uk?subject=Yes%20to%20my%20website%20—%20KCM%20Window%20Cleaning">Yes — let's get it live →</a>
+    <p style="margin-top:14px;font-size:.8rem">Or just reply to my email / call me for a chat. — Dan, DM Web Services</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Draft website preview for KCM Window Cleaning · Created by <a href="https://dmwebservices.co.uk">DM Web Services</a> · dmwebservices.co.uk
+  </div>
+</footer>
+
+</body>
+</html>
